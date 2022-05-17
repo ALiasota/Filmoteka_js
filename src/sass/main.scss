@@ -1,7 +1,29 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+@import './utils/variables';
+@import './base/reset';
+@import './base/container';
+@import './base/section';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+//Header
+@import './layouts/headerPage1';
+@import './layouts/headerLib';
+@import './layouts/modal-loginForm';
+@import './layouts/switch';
+//Card markup
+@import './components/card-markup';
+
+//Footer
+@import './layouts/footer';
+//Modal card
+@import './layouts/modalCard';
+
+//Scroll button
+@import './components/scroll-btn';
+
+//Modal Team
+@import './layouts/modal-team';
+
+//Black Theme
+@import './components/black_theme';
+
+// pagination
+@import './layouts/pagination';

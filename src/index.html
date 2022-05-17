@@ -3,19 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Filmoteka</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/external-microdots-premium-microdot-graphic/64/000000/external-film-lifestyle-entertainment-vol3-microdots-premium-microdot-graphic.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@500&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/headerPage1.html"></include> -->
 
-   
+    <!-- <include src="./partials/HeaderLib.html"></include> -->
+    <div id="wr">
+      <div id="header"></div>
+      <!-- <label class="switch">
+      <input class="switch__checkbox" type="checkbox" />
+      <span class="switch__slider"></span>
+    </label> -->
+
+      <!-- <button id="test" type="button">Test watched page</button> -->
+      <div id="modalWindow"></div>
+      </div>
+      <div class="header__btn-cont header__top">
+        <button type="button" class="header__btn header__btn--day" >TOP TODAY</button>
+        <button type="button" class="header__btn header__btn--week">TOP WEEK</button>
+    </div>
+      <div id="content"></div>
+      <div class="pagination__container">
+        <div id="pagination" class="tui-pagination invisible"></div>
+        <div id="pagination-find" class="tui-pagination invisible"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+
+    <div id="modalWindowTeam"></div>
+
+    <!-- scroll btn -->
+    <div class="scroll-up">
+      <svg class="scroll-up__svg"></svg>
+    </div>
+    <div class="low-scren"><h1>Your screen is to low</h1></div>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
 </html>
